@@ -40,6 +40,7 @@ $ docker logs x2go
 Save the key to your local PC and use it from x2go client.
 
 ```
+# On your local PC
 $ vi ~/x2go/x2go-key
 $ chmod 400 ~/x2go/x2go-key
 ```
