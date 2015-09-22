@@ -1,14 +1,16 @@
 # docker-x2go
 
-Remote desktop [x2go server](http://wiki.x2go.org/doku.php) in a dock
+Remote desktop [X2Go Server](http://wiki.x2go.org/doku.php) in a dock
 
+- X2Go Server
 - Firefox
 - Emacs
 - rxvt Terminal Emulator
-- Ubuntu base image
+- Japanese fonts
+- Ubuntu 14.04 LTS base image
 
 
-## Running the x2go server
+## Running the X2Go Server Container
 
 Run the script.
 
@@ -37,17 +39,33 @@ If the key was not printed, try this command:
 $ docker logs x2go
 ```
 
-Save the key to your local PC and use it from x2go client.
+Save the key to your local PC.
 
 ```
 # On your local PC
 $ vi ~/x2go/x2go-key
-$ chmod 400 ~/x2go/x2go-key
+$ chmod 600 ~/x2go/x2go-key
 ```
+
+Start X2Go Client on you PC. Choose **Session** -> **New Session**,
+and enter the following information to the **Session** tab.
+
+- **Server**
+  * Host: <The IP address of the server>
+  * Login: `docker`
+  * SSH port: `2222`
+  * Use RSA/DSA key for ssh connection: `~/x2go/x2go-key`
+
+- **Session Type**
+  * Choose **Custom desktop** and enter `openbox-session` to the
+    command field.
+
+Double-click on the session panel to connect.
 
 
 ## Stopping the x2go server
 
 ```
-$ docker kill x2go && docker rm x2go
+$ docker stop x2go
+$ docker rm x2go
 ```
