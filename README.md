@@ -51,14 +51,14 @@ Start X2Go Client on you PC. Choose **Session** -> **New Session**,
 and enter the following information to the **Session** tab.
 
 - **Server**
-  * Host: <The IP address of the server>
+  * Host: (The IP address of the server)
   * Login: `docker`
   * SSH port: `2222`
   * Use RSA/DSA key for ssh connection: `~/x2go/x2go-key`
 
 - **Session Type**
-  * Choose **Custom desktop** and enter `openbox-session` to the
-    command field.
+  * Choose **Custom desktop** and enter `openbox-session` to
+    the **Command** field.
 
 Double-click on the session panel to connect.
 
