@@ -2,6 +2,8 @@
 
 Remote desktop [X2Go Server](http://wiki.x2go.org/doku.php) in a dock
 
+[![Docker Repository on Quay.io](https://quay.io/repository/tatsuya6502/x2go/status "Docker Repository on Quay.io")](https://quay.io/repository/tatsuya6502/x2go)
+
 - X2Go Server
 - Firefox
 - Emacs
