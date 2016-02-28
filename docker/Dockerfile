@@ -1,6 +1,12 @@
 FROM ubuntu
 MAINTAINER Tatsuya Kawano
 
+# Please change this value to force the builders at Quay.io/Docker Hub
+# to omit the cached Docker images. This will have the same effect to
+# adding `--no-cache` to `docker build` command.
+#
+ENV DOCKERFILE_UPDATED 2016-02-28
+
 RUN (apt-get update && \
      apt-get install -y software-properties-common && \
      add-apt-repository -y ppa:x2go/stable && \
