@@ -8,6 +8,7 @@ MAINTAINER Tatsuya Kawano
 ENV DOCKERFILE_UPDATED 2016-02-28
 
 RUN (apt-get update && \
+     apt-get upgrade -y && \
      apt-get install -y software-properties-common && \
      add-apt-repository -y ppa:x2go/stable && \
      apt-get update && \
