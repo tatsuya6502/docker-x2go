@@ -13,9 +13,10 @@ RUN (apt-get update && \
      apt-get update && \
      apt-get install -y \
          x2goserver x2goserver-xsession ttf-dejavu fonts-ipafont-gothic \
-         openbox obconf obmenu conky nitrogen \
+         xubuntu-desktop conky \
          rxvt-unicode-256color \
-         firefox emacs)
+         firefox emacs \
+         ibus-mozc)
 
 RUN (mkdir -p /var/run/sshd && \
      sed -ri 's/UseDNS yes/#UseDNS yes/g' /etc/ssh/sshd_config && \
