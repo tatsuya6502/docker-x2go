@@ -9,12 +9,13 @@ Remote desktop [X2Go Server](http://wiki.x2go.org/doku.php) in a dock
 - Emacs
 - rxvt Terminal Emulator
 - Japanese fonts
-- Ubuntu 14.04 LTS base image
+- Ubuntu 16.04 LTS base image
 
 
 ## Running the X2Go Server Container
 
-Run the script.
+Run the script as the followings. This will pull the Docker image
+and run it.
 
 ```
 $ cd docker-x2go
